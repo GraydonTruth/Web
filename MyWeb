@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ricky Roberts — Business English Instructor</title>
+  <meta name="description" content="Ricky Roberts — TEFL-certified Business English instructor. Online lessons for professionals." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1724; /* dark slate */
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --radius:12px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: #e6eef6;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071126 0%,#07172b 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px}
+    .wrap{width:100%;max-width:var(--maxw);}
+
+    header{display:flex;gap:24px;align-items:center;background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,23,0.6);}
+    .photo{width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,var(--glass),transparent);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    .headline{flex:1}
+    h1{margin:0;font-size:20px;letter-spacing:0.4px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .contact{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-size:13px;border:1px solid rgba(255,255,255,0.02)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+    .section + .section{margin-top:12px}
+    h2{margin:0 0 12px 0;font-size:16px}
+    ul{margin:0;padding-left:18px;color:var(--muted)}
+    li{margin-bottom:8px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;border:1px solid rgba(255,255,255,0.02)}
+
+    .right{position:relative}
+    .cta{display:flex;flex-direction:column;gap:10px}
+    .btn{display:inline-block;text-decoration:none;padding:12px 16px;border-radius:10px;font-weight:600;text-align:center}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#34d399);color:#042c1f}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--accent);background:transparent}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){main{grid-template-columns:1fr;}.right{order:2}}
+
+    /* subtle animations */
+    .fade{opacity:0;transform:translateY(6px);animation:fadeIn .6s forwards}
+    @keyframes fadeIn{to{opacity:1;transform:none}}
+
+    /* simple visual divider */
+    .hr{height:1px;background:linear-gradient(90deg,transparent,#1f2b3a,transparent);margin:14px 0;border-radius:4px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="fade">
+      <div class="photo" id="photo">
+        <span style="color:var(--muted);font-size:12px">Add photo</span>
+      </div>
+      <div class="headline">
+        <h1>Ricky Roberts</h1>
+        <p class="lead">TEFL-certified Business English Instructor — Cape Town, South Africa</p>
+        <div class="contact">
+          <div class="chip">📧 <a href="mailto:graydontruth@gmail.com" style="color:inherit;text-decoration:none">graydontruth@gmail.com</a></div>
+          <div class="chip">📱 +27 64 978 7012</div>
+          <div class="chip">📍 Cape Town, South Africa</div>
+        </div>
+      </div>
+      <div style="margin-left:12px;text-align:right">
+        <a class="btn btn-primary" href="#contact">Book a trial</a>
+        <div style="height:6px"></div>
+        <a class="btn btn-ghost" href="/Editable_CV_Ricky_Roberts.docx" download>Download CV</a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section class="card section fade">
+          <h2>Professional Summary</h2>
+          <p style="color:var(--muted);margin:0">Resourceful and composed professional with experience in operations, online instruction, and client-facing communication. Known for maintaining a calm, structured approach while guiding adult learners through new concepts. Skilled at simplifying complex ideas, managing high-volume customer interactions, and creating a positive learning environment.</p>
+        </section>
+
+        <section class="card section fade" style="margin-top:12px">
+          <h2>Core Competencies</h2>
+          <div class="skills">
+            <div class="skill">Business English Communication</div>
+            <div class="skill">Adult Learning & Facilitation</div>
+            <div class="skill">Customer Experience</div>
+            <div class="skill">Conflict Resolution</div>
+            <div class="skill">Lesson Planning</div>
+            <div class="skill">Zoom / Teams / Google Meet</div>
+            <div class="skill">Time Management</div>
+            <div class="skill">Multicultural Communication</div>
+            <div class="skill">Python fundamentals</div>
+          </div>
+        </section>
+
+        <section class="card section fade">
+          <h2>Professional Experience</h2>
+          <div style="color:var(--muted)">
+            <strong>Freelance Online English & Coding Instructor</strong> — Remote (2022–2024)<br>
+            <small>Delivered beginner English and coding lessons to adults aged 19–44. Facilitated small-group sessions (4–6 learners). Taught coding fundamentals to 30+ students.</small>
+            <div class="hr"></div>
+
+            <strong>Freelance English & Math Tutor</strong> — Johannesburg (2019–2020)<br>
+            <small>Provided tutoring in English and Mathematics to primary school learners; one-on-one and small groups.</small>
+            <div class="hr"></div>
+
+            <strong>Operations Manager — Skunkworks Africa</strong> — Cape Town (2023–2025)<br>
+            <small>Oversaw daily operations, handled 200+ customer interactions weekly, and standardized communication processes.</small>
+            <div class="hr"></div>
+
+            <strong>Restaurant Manager — Valentino’s Pub & Grill</strong> — Cape Town (02/2020–05/2022)<br>
+            <small>Managed staff, customer service and operations; maintained professionalism in high-pressure environments.</small>
+            <div class="hr"></div>
+
+            <strong>Manager / Pump Technician — Pump Trade & Engineering</strong> — Cape Town (05/2022–03/2024)<br>
+            <small>Oversaw client communication and service coordination; explained technical processes to non-technical clients.</small>
+          </div>
+        </section>
+
+        <section class="card section fade">
+          <h2>Education & Certifications</h2>
+          <ul>
+            <li>TEFL 120-hour Certificate</li>
+            <li>Google Cybersecurity Certificate</li>
+            <li>IBM z/OS Mainframe Practitioner</li>
+            <li>Multiple IBM & Coursera technical badges (25+)</li>
+            <li>Ongoing: Introductory Spanish (self-study)</li>
+          </ul>
+        </section>
+
+        <section class="card section fade" id="contact">
+          <h2>Contact & Trial</h2>
+          <p style="color:var(--muted)">I offer structured, business-focused lessons (email etiquette, meeting language, presentation skills, and workplace vocabulary). I’m available for trial lessons and flexible scheduling to support international students.</p>
+
+          <p style="margin-top:12px"><strong>Email:</strong> <a href="mailto:graydontruth@gmail.com" style="color:var(--accent);text-decoration:none">graydontruth@gmail.com</a></p>
+          <p><strong>Phone:</strong> +27 64 978 7012</p>
+
+          <form onsubmit="event.preventDefault();alert('Thanks! I will contact you shortly.');" style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+            <input placeholder="Full name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"> 
+            <input placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"> 
+            <textarea placeholder="Message / preferred times" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </section>
+
+      </div>
+
+      <aside class="right">
+        <div class="card fade">
+          <h2>Services</h2>
+          <ul style="color:var(--muted)">
+            <li>Business English (email, meetings, presentations)</li>
+            <li>Conversation & pronunciation (adults)</li>
+            <li>Interview prep & CV review</li>
+            <li>Technical-to-non-technical communication coaching</li>
+          </ul>
+
+          <div style="height:12px"></div>
+          <h2>Rates & Availability</h2>
+          <p style="color:var(--muted);margin:0">Flexible schedule — mornings, evenings and weekends. Rates available on request.</p>
+
+          <div style="height:12px"></div>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Book a trial</a>
+            <a class="btn btn-ghost" href="/Editable_CV_Ricky_Roberts.docx" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="card fade" style="margin-top:16px">
+          <h2>Quick Facts</h2>
+          <ul style="color:var(--muted)">
+            <li>Native English speaker</li>
+            <li>TEFL certified</li>
+            <li>Taught 30+ adult learners programming</li>
+            <li>Handled 200+ customer interactions weekly</li>
+            <li>Willing to learn Spanish to support students</li>
+          </ul>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer class="fade">© Ricky Roberts — Business English Instructor</footer>
+  </div>
+
+  <script>
+    // Allow user to click photo area to replace with uploaded image (client-side only)
+    const photo = document.getElementById('photo');
+    photo.addEventListener('click', ()=>{
+      const input = document.createElement('input');
+      input.type = 'file'; input.accept = 'image/*';
+      input.onchange = e => {
+        const file = e.target.files[0];
+        if(!file) return;
+        const url = URL.createObjectURL(file);
+        photo.innerHTML = '';
+        const img = document.createElement('img'); img.src = url; photo.appendChild(img);
+      }
+      input.click();
+    });
+  </script>
+</body>
+</html>
