@@ -68,9 +68,9 @@
   <div class="wrap">
   <header class="fade">
       <div class="photo" id="photo">
-        <!-- FIXED PROFILE IMAGE -->
         <img src="cv picture.jpeg" alt="Profile Photo">
       </div>
+    
       <div class="headline">
         <h1>Ricky Roberts</h1>
         <p class="lead">TEFL-certified Business English Instructor — Cape Town, South Africa</p>
@@ -199,21 +199,5 @@
     <footer class="fade">© Ricky Roberts — Business English Instructor</footer>
   </div>
 
-  <script>
-    // Allow user to click photo area to replace with uploaded image (client-side only)
-    const photo = document.getElementById('photo');
-    photo.addEventListener('click', ()=>{
-      const input = document.createElement('input');
-      input.type = 'file'; input.accept = 'image/*';
-      input.onchange = e => {
-        const file = e.target.files[0];
-        if(!file) return;
-        const url = URL.createObjectURL(file);
-        photo.innerHTML = '';
-        const img = document.createElement('img'); img.src = url; photo.appendChild(img);
-      }
-      input.click();
-    });
-  </script>
 </body>
 </html>
